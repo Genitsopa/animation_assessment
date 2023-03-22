@@ -1,0 +1,99 @@
+body {
+    background-image: url("../Components/HeartBG.jpg");
+}
+
+img.card-img-top {
+    margin:30px 0 0 0;
+    width: 35px;
+}
+
+.card-img-bottom {
+    background-image: url('../Components/arrow-dark-gray.svg');
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 40px;
+    animation-name: bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.card span {
+    margin:20px 0 20px 0;
+    width: 50px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 100% / 130% 130% 80% 80%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    color: white;
+}
+
+.paragraph {
+    color: rgb(189, 180, 180);
+}
+
+.first-box {
+    background: linear-gradient(#ffffff 97%,rgb(104, 198, 230) 3%);
+    animation-name: background1-color;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+.second-box {
+    background: linear-gradient(#ffffff 97%,rgb(157, 214, 157) 3%);
+    animation-name: background2-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.third-box {
+    background: linear-gradient(#ffffff 97%,rgb(225, 161, 225) 3%);
+    animation-name: background3-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.card-title {
+    animation-name: text-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background1-color {
+    100% {
+        background: linear-gradient(rgb(104, 198, 230) 97%,#ffffff 3%);
+    }
+}
+
+@keyframes background2-color {
+    100% {
+        background: linear-gradient(rgb(157, 214, 157) 97%,#ffffff 3%);
+    }
+}
+
+@keyframes background3-color {
+    100% {
+        background: linear-gradient(rgb(225, 161, 225) 97%,#ffffff 3%);
+    }
+}
+
+@keyframes text-color {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes bg {
+        from {
+            background-image: url(../Components/arrow-dark-gray.svg);
+        }
+        to {
+            background-image: url(../Components/arrow-white.svg);
+        }
+}
